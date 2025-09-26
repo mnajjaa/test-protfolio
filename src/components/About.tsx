@@ -1,6 +1,6 @@
 import Title from "./Title";
-import img from '../assets/img1.jpeg';
-import { BrainCircuit, Cloud, FlaskConical, Sparkles, Github, Linkedin } from "lucide-react";
+import img from '../assets/photoLarge1.jpg';
+import { Sparkles, Workflow, Orbit, Radar , Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -65,7 +65,7 @@ const About = () => {
                         <div className="relative w-full h-[26rem] flex items-center justify-center">
                             <img 
                                 src={img} 
-                                alt="Nourhen Ferjani" 
+                                alt="Ibtihel Mnaja" 
                                 className="w-full h-full object-cover rounded-2xl shadow-2xl border-4 border-accent"
                                 style={{ objectPosition: "center center" }}
                             />
@@ -88,16 +88,14 @@ const About = () => {
                         >
                             <h2 className="text-2xl font-bold mb-4">Mon Parcours</h2>
                             <p className="text-base-content/90 mb-4">
-                                Étudiante en 3ème année d'ingénierie en Data Science à ESPRIT, je me spécialise dans l'analyse de données et l'intelligence artificielle. Passionnée par la transformation des données en insights actionnables, je m'épanouis dans les défis techniques qui allient rigueur analytique et créativité.
-                            </p>
+                            Étudiante ingénieure en Data Science à ESPRIT, je me spécialise dans l’analyse de données et l’intelligence artificielle. Passionnée par la création de solutions basées sur les données, j’exploite des modèles avancés, des pipelines robustes et des approches MLOps pour transformer l’information brute en insights stratégiques.                            </p>
                             <p className="text-base-content/90 mb-6">
-                                Ce qui me motive ? Découvrir des patterns cachés dans les données et développer des solutions intelligentes qui apportent une réelle valeur.
-                            </p>
+                            Ce qui me motive ? Identifier des patterns cachés, anticiper des comportements et concevoir des solutions intelligentes qui allient rigueur scientifique et impact concret.                            </p>
                             
                             {/* Liens réseaux sociaux */}
                             <div className="flex flex-wrap gap-3">
                                 <a 
-                                    href="https://www.linkedin.com/in/nourhen-ferjeni-32156a207/" 
+                                    href="https://www.linkedin.com/in/ibtihel-mnaja-4a0540240/" 
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn btn-accent btn-outline btn-sm flex items-center gap-2"
@@ -106,7 +104,7 @@ const About = () => {
                                     LinkedIn
                                 </a>
                                 <a 
-                                    href="https://github.com/Nourhen-Ferjeni" 
+                                    href="https://github.com/mnajjaa" 
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn btn-accent btn-outline btn-sm flex items-center gap-2"
@@ -126,24 +124,24 @@ const About = () => {
                             <h2 className="text-2xl font-bold mb-4">Mes Forces</h2>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <div className="flex items-start gap-3">
-                                    <BrainCircuit className="text-accent mt-1 flex-shrink-0" />
+                                    <Workflow  className="text-accent mt-1 flex-shrink-0" />
                                     <div>
-                                        <h3 className="font-semibold">Esprit d'analyse</h3>
-                                        <p className="text-sm text-base-content/80">Approche méthodique des problèmes complexes</p>
+                                        <h3 className="font-semibold">Pragmatisme</h3>
+                                        <p className="text-sm text-base-content/80">Capacité à transformer l’analyse en solutions concrètes et efficaces.</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-3">
-                                    <Cloud className="text-accent mt-1 flex-shrink-0" />
+                                    <Radar  className="text-accent mt-1 flex-shrink-0" />
                                     <div>
                                         <h3 className="font-semibold">Curiosité</h3>
-                                        <p className="text-sm text-base-content/80">Veille technologique constante</p>
+                                        <p className="text-sm text-base-content/80">Veille continue sur les nouvelles approches en IA et Data Science.</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-3">
-                                    <FlaskConical className="text-accent mt-1 flex-shrink-0" />
+                                    <Orbit  className="text-accent mt-1 flex-shrink-0" />
                                     <div>
                                         <h3 className="font-semibold">Adaptabilité</h3>
-                                        <p className="text-sm text-base-content/80">Apprentissage continu des nouvelles technologies</p>
+                                        <p className="text-sm text-base-content/80">Intégration rapide aux environnements et technologies émergentes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -155,8 +153,7 @@ const About = () => {
                             variants={itemVariants}
                         >
                             <p className="text-base-content/90">
-                                "Dans un monde rempli de données, ce ne sont pas les informations qui manquent, mais la sagesse pour les interpréter."
-                            </p>
+                            "Les données racontent une histoire : mon rôle est de la traduire en décisions stratégiques et en innovations concrètes."                            </p>
                         </motion.div>
                     </motion.div>
                 </motion.div>

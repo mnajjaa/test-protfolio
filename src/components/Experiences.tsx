@@ -1,95 +1,148 @@
-import Title from "./Title"
+import { CheckCircle2 } from "lucide-react";
+import Title from "./Title";
 
 
-import entity from "../assets/companies/entity.png";
-import ubci from "../assets/companies/ubci.png";
-import innovup from "../assets/companies/innovup.png";
+import darydar from "../assets/companies/darydar.png";
+import medianet from "../assets/companies/medianet.png";
+import value from "../assets/companies/value.png";
+import { m } from "framer-motion";
 
 const experiences = [
     {
         id: 1,
-        role: "Stagiaire Ingénieure",
-        company: "Entity Service",
+        role: "Stagiaire Data Science & IA chez",
+        company: "Value",
+        website: "https://value.tn",
         period: "Juin 2025 - Août 2025",
         description: [
-            "Participation au développement d'une application web en React pour la gestion des bornes de recharge de Renault.",
-            "Création d'un dashboard de KPI clients avec visualisation de données"
+            "Participation au dAcveloppement d'une application web en React pour la gestion des bornes de recharge de Renault.",
+            "CrAcation d'un dashboard de KPI clients avec visualisation de donnAces"
         ],
-        image: entity,
+        image: value,
     },
     {
         id: 2,
-        role: "Stagiaire Développeuse",
-        company: "UBCI Banque",
-        period: "Juin 2024 - Juillet 2024",
+        role: "Stagiaire Data Science chez",
+        company: "Value",
+        website: "https://value.tn",
+        period: "Janvier 2025 - Mai 2025",
+        note: "Stage academique en collaboration avec ESPRIT",
         description: [
-            "Développement d'une application web Symfony/Angular pour la gestion RH",
-            "Implémentation des fonctionnalités de gestion des congés et plannings"
+            "DAcveloppement d'une application web Symfony/Angular pour la gestion RH",
+            "ImplAcmentation des fonctionnalitAcs de gestion des congAcs et plannings"
         ],
-        image: ubci,
+        image: value,
     },
     {
         id: 3,
-        role: "Stagiaire Développeuse",
-        company: "Innovup",
+        role: "Stagiaire en DAcveloppement Full-Stack chez",
+        company: "Medianet",
+        website: "https://www.medianet.tn/fr",
+        period: "Juillet 2024 - Août 2024",
+        description: [
+            "Conception d'une application mobile Flutter/Spring Boot pour Accole primaire",
+            "IntAcgration d'un systAme de suivi des bus scolaires en temps rAcel"
+        ],
+        image: medianet,
+    },
+    {
+        id: 3,
+        role: "Stagiaire en développement chez",
+        company: "Darydar",
+        website: "https://www.darydar.tn",
         period: "Février 2023 - Mai 2023",
         description: [
-            "Conception d'une application mobile Flutter/Spring Boot pour école primaire",
-            "Intégration d'un système de suivi des bus scolaires en temps réel"
+            "Conception d'une application mobile Flutter/Spring Boot pour Accole primaire",
+            "IntAcgration d'un systAme de suivi des bus scolaires en temps rAcel"
         ],
-        image: innovup,
+        image: darydar,
     },
 ];
 
 const Experiences = () => {
     return (
-        <div id="Experiences" className="bg-base-300 p-10 mb-10 md:mb-32">
-            <div className="max-w-6xl mx-auto">
+        <section id="Experiences" className="bg-base-100 py-16 md:py-24">
+            <div className="mx-auto max-w-6xl px-6 md:px-8">
                 <Title title="Expériences Professionnelles" />
-                <br /><br />
+                <div className="mt-12 rounded-3xl border border-base-300/50 bg-base-300 p-8 shadow-xl backdrop-blur">
+                    <div className="flex flex-col gap-3 pb-10 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+                        <h2 className="text-3xl font-semibold tracking-tight">Mes Expériences</h2>
+                        <p className="max-w-xl text-sm leading-relaxed text-base-content/70">
+                        Un parcours axé sur l’alliance des technologies, de la productivité et de l’esprit d’équipe.                        </p>
+                    </div>
+                    <div className="flex flex-col gap-12">
+                        {experiences.map((experience, index) => {
+                            const isLast = index === experiences.length - 1;
 
-                <div className="bg-base-100 p-6 rounded-2xl shadow-xl">
-                    <h2 className="text-2xl font-bold mb-6 pb-4 border-b border-base-300 flex items-center">
-                        <span>Mes Expériences</span>
-                    </h2>
-                    <div className="space-y-8">
-                        {experiences.map((experience) => (
-                            <div
-                                key={experience.id}
-                                className="group relative pl-8 pb-8 border-l-2 border-accent last:border-transparent last:pb-0"
-                            >
-                                <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-accent border-4 border-base-100"></div>
-                                <div className="bg-base-200 p-6 rounded-xl shadow-md group-hover:shadow-lg transition-shadow duration-300">
-                                    <div className="flex items-start gap-4">
-                                        <img
-                                            src={experience.image}
-                                            alt={experience.company}
-                                            className="object-cover h-14 w-14 rounded-lg"
-                                        />
-                                        <div>
-                                            <h3 className="text-xl font-bold">
-                                                {experience.role}
-                                                <span className="text-accent"> @ {experience.company}</span>
-                                            </h3>
-                                            <span className="text-sm text-base-content/70">{experience.period}</span>
-                                            <ul className="mt-4 space-y-3">
-                                                {experience.description.map((desc, index) => (
-                                                    <li key={index} className="flex items-start">
-                                                        <span className="text-accent mr-2 mt-1">▹</span>
-                                                        <span>{desc}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                            return (
+                                <div key={experience.id} className="grid gap-8 md:grid-cols-[3.5rem_1fr] md:items-stretch">
+                                    <div className="relative flex flex-col items-center pt-1">
+                                        <span className="z-10 flex h-10 w-10 items-center justify-center rounded-full bg-sky-500/10 text-sm font-semibold text-sky-600 ring-2 ring-sky-300/70">
+                                            {String(index + 1).padStart(2, "0")}
+                                        </span>
+                                        {!isLast && (
+                                            <span className="mt-3 w-[3px] flex-1 rounded-full bg-gradient-to-b from-sky-200 via-sky-300 to-sky-500" />
+                                        )}
                                     </div>
+                                    <article className="relative flex h-full flex-col justify-between rounded-2xl border border-base-300/60 bg-base-100 p-7 shadow-md transition-shadow duration-200 hover:shadow-xl">
+                                        <span className="absolute right-7 top-6 inline-flex items-center gap-1 rounded-full border border-sky-200 bg-sky-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-600 shadow-sm">
+                                            1 mois
+                                        </span>
+                                        <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+                                            <div className="flex items-start gap-4">
+                                                <img
+                                                    src={experience.image}
+                                                    alt={experience.company}
+                                                    className="h-16 w-16 rounded-xl border border-base-200 bg-base-100 object-cover"
+                                                />
+                                                <div>
+                                                    <h3 className="text-xl font-semibold">
+                                                        {experience.role}
+                                                        <span className="text-sky-500">
+                                                            {" "}{" "}
+                                                            {experience.website ? (
+                                                                <a
+                                                                    href={experience.website}
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer"
+                                                                    className="hover:underline"
+                                                                >
+                                                                    {experience.company}
+                                                                </a>
+                                                            ) : (
+                                                                experience.company
+                                                            )}
+                                                        </span>
+                                                    </h3>
+                                                    <p className="mt-1 text-sm font-medium uppercase tracking-wide text-base-content/60">
+                                                        {experience.period}
+                                                    </p>
+                                                    {experience.note && (
+                                                        <p className="mt-2 text-xs italic text-base-content/70">
+                                                            {experience.note}
+                                                        </p>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul className="mt-6 space-y-3">
+                                            {experience.description.map((desc, descriptionIndex) => (
+                                                <li key={descriptionIndex} className="flex items-start gap-3 text-sm leading-relaxed text-base-content/80">
+                                                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-400" />
+                                                    <span>{desc}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </article>
                                 </div>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
+        </section>
+    );
+};
 
-export default Experiences
+export default Experiences;
+
