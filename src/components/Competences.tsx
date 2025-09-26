@@ -114,7 +114,7 @@ const Competences = () => {
     ];
 
     return (
-    <div id="Competences" className="bg-base-100 p-10 mb-10 md:mb-32"> {/* Changé de bg-base-300 à bg-base-100 */}
+    <div id="Competences" className="bg-base-300 p-10 mb-10 md:mb-32"> {/* Changé de bg-base-300 à bg-base-100 */}
         <div className="max-w-6xl mx-auto">
             <Title title="Mes Compétences" />
             <br /><br />
@@ -128,14 +128,14 @@ const Competences = () => {
                 {competences.map((competence, index) => (
                     <motion.div
                         key={index}
-                        className="bg-base-300 p-6 rounded-2xl shadow-lg border border-base-200"
+                        className="bg-base-100 p-6 rounded-2xl shadow-lg border border-base-200"
                         variants={itemVariants}
                         whileHover={{ y: -5 }}
                     >
-                        <h2 className="text-xl font-bold mb-6 pb-2 border-b border-accent text-accent">
+                        <h2 className="text-xl font-bold mb-6 pb-2 border-b border-accent  text-accent">
                             {competence.category}
                         </h2>
-                        <div className="space-y-4">
+                        <div className="space-y-4 ">
                             {competence.skills.map((skill, skillIndex) => (
                                 <div key={skillIndex} className="flex items-center gap-4">
                                     <div className="w-12 h-12 p-1 rounded-full bg-accent/20 flex items-center justify-center"> 
@@ -147,7 +147,7 @@ const Competences = () => {
                                     </div>
                                     <div className="flex-1">
                                         <h3 className="font-medium text-base-content">{skill.name}</h3>
-                                        <div className="w-full bg-base-100 rounded-full h-2 mt-1"> {/* Changé de bg-base-200 à bg-base-100 */}
+                                        <div className="w-full bg-base-300 rounded-full h-2 mt-1"> {/* Changé de bg-base-200 à bg-base-100 */}
                                             <div 
                                                 className="h-2 rounded-full bg-accent" 
                                                 style={{ 

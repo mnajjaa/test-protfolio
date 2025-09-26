@@ -16,8 +16,9 @@ export default function App() {
       </div>
 
       <About />
-      <Competences />
       <Experiences />
+      <Competences />
+      
       <div className="p-5 md:px-[15%]">
         
         <Projects />
