@@ -14,9 +14,10 @@ const experiences = [
         company: "Value",
         website: "https://value.tn",
         period: "Juin 2025 - Août 2025",
+        duration: "2 mois",
         description: [
-            "Participation au dAcveloppement d'une application web en React pour la gestion des bornes de recharge de Renault.",
-            "CrAcation d'un dashboard de KPI clients avec visualisation de donnAces"
+            "Développement d’un simulateur IA multi-agents pour modéliser le comportement des entreprises clientes des banques tunisiennes.",
+            "Intégration d’agents dynamiques et d’outils d’analyse avancée pour prédire l’adoption, le churn et l’impact des scénarios économiques."
         ],
         image: value,
     },
@@ -26,10 +27,11 @@ const experiences = [
         company: "Value",
         website: "https://value.tn",
         period: "Janvier 2025 - Mai 2025",
+        duration: "5 mois",
         note: "Stage academique en collaboration avec ESPRIT",
         description: [
-            "DAcveloppement d'une application web Symfony/Angular pour la gestion RH",
-            "ImplAcmentation des fonctionnalitAcs de gestion des congAcs et plannings"
+            "Développement d'une plateforme d'automatisation de Due Diligence Crypto pour l'évaluation de projets blockchain.",
+            "Conception de pipelines de données pour automatiser la collecte et analyse des informations, avec création d'un système Q&A et de dashboards interactifs."
         ],
         image: value,
     },
@@ -39,9 +41,10 @@ const experiences = [
         company: "Medianet",
         website: "https://www.medianet.tn/fr",
         period: "Juillet 2024 - Août 2024",
+        duration: "1 mois",
         description: [
-            "Conception d'une application mobile Flutter/Spring Boot pour Accole primaire",
-            "IntAcgration d'un systAme de suivi des bus scolaires en temps rAcel"
+            "Développement d'une plateforme de recrutement full-stack avec extraction automatique de CV.",
+            "Utilisation de Spring Boot et Angular pour le développement et le déploiement des APIs sécurisées."
         ],
         image: medianet,
     },
@@ -51,9 +54,10 @@ const experiences = [
         company: "Darydar",
         website: "https://www.darydar.tn",
         period: "Février 2023 - Mai 2023",
+        duration: "4 mois",
         description: [
-            "Conception d'une application mobile Flutter/Spring Boot pour Accole primaire",
-            "IntAcgration d'un systAme de suivi des bus scolaires en temps rAcel"
+            "Conception et développement d'une application web B2B pour la gestion des interventions d'assurance.",
+            "Création de maquettes sur Figma, réalisation de tests fonctionnels et suivi du projet selon la méthodologie Scrum."
         ],
         image: darydar,
     },
@@ -85,9 +89,11 @@ const Experiences = () => {
                                         )}
                                     </div>
                                     <article className="relative flex h-full flex-col justify-between rounded-2xl border border-base-300/60 bg-base-100 p-7 shadow-md transition-shadow duration-200 hover:shadow-xl">
-                                        <span className="absolute right-7 top-6 inline-flex items-center gap-1 rounded-full border border-sky-200 bg-sky-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-600 shadow-sm">
-                                            1 mois
-                                        </span>
+                                        {experience.duration && (
+                                            <span className="absolute right-7 top-6 inline-flex items-center gap-1 rounded-full border border-sky-200 bg-sky-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-600 shadow-sm">
+                                                {experience.duration}
+                                            </span>
+                                        )}
                                         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
                                             <div className="flex items-start gap-4">
                                                 <img
