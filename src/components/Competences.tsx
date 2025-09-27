@@ -160,9 +160,7 @@ const Competences = () => {
                                 >
                                     <header className="flex items-start justify-between gap-4">
                                         <div>
-                                            <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-600">
-                                                Cluster {String(index + 1).padStart(2, "0")}
-                                            </span>
+                                            
                                             <h3 className="mt-3 text-lg font-semibold text-base-content">
                                                 {competence.category}
                                             </h3>

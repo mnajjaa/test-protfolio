@@ -16,9 +16,9 @@ const Contact = () => {
             opacity: 1,
             transition: {
                 staggerChildren: 0.2,
-                delayChildren: 0.3
-            }
-        }
+                delayChildren: 0.3,
+            },
+        },
     };
 
     const itemVariants = {
@@ -27,108 +27,124 @@ const Contact = () => {
             y: 0,
             opacity: 1,
             transition: {
-                duration: 0.6
-            }
-        }
+                duration: 0.6,
+            },
+        },
     };
 
     return (
-        <div id="Contact" className="bg-base-300 p-10 mb-10 md:mb-32">
-            <div className="max-w-6xl mx-auto">
+        <section id="Contact" className="bg-base-100 py-16 md:py-24">
+            <div className="mx-auto max-w-6xl px-4 md:px-6">
                 <Title title="Contactez-moi" />
-                <br />
-                
-                <motion.div 
-                    className="flex flex-col md:flex-row gap-8"
-                    initial="hidden"
-                    animate={isMounted ? "visible" : "hidden"}
-                    variants={containerVariants}
-                >
-                    {/* Informations de contact */}
-                    <motion.div 
-                        className="w-full md:w-1/2 bg-base-100 p-6 rounded-xl shadow-lg"
-                        variants={itemVariants}
-                    >
-                        <h2 className="text-2xl font-bold mb-6">Mes coordonnées</h2>
-                        
-                        <div className="space-y-4">
-                            <div className="flex items-start gap-4">
-                                <Mail className="text-accent mt-1 flex-shrink-0" />
-                                <div>
-                                    <h3 className="font-semibold">Email</h3>
-                                    <p className="text-base-content/80">nourhen.ferjeni26@gmail.com</p>
-                                </div>
-                            </div>
-                            
-                            <div className="flex items-start gap-4">
-                                <Phone className="text-accent mt-1 flex-shrink-0" />
-                                <div>
-                                    <h3 className="font-semibold">Téléphone</h3>
-                                    <p className="text-base-content/80">+216 92 404 237</p>
-                                </div>
-                            </div>
-                            
-                            <div className="flex items-start gap-4">
-                                <MapPin className="text-accent mt-1 flex-shrink-0" />
-                                <div>
-                                    <h3 className="font-semibold">Localisation</h3>
-                                    <p className="text-base-content/80">Tunis, Tunisie</p>
-                                </div>
-                            </div>
-                        </div>
-                    </motion.div>
+                <div className="mt-12 rounded-3xl border border-base-300/50 bg-base-300 p-8 shadow-xl backdrop-blur md:px-12">
+                    <div className="flex flex-col gap-3 pb-10 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+                        <h2 className="text-3xl font-semibold tracking-tight">Restons en contact</h2>
+                        <p className="max-w-xl text-sm leading-relaxed text-base-content/70">
+                            Un message suffit pour démarrer une collaboration : échangeons sur vos enjeux data, IA ou produits digitaux.
+                        </p>
+                    </div>
 
-                    {/* Formulaire de contact */}
-                    <motion.div 
-                        className="w-full md:w-1/2 bg-base-100 p-6 rounded-xl shadow-lg"
-                        variants={itemVariants}
+                    <motion.div
+                        className="grid grid-cols-1 gap-8 lg:grid-cols-2"
+                        initial="hidden"
+                        animate={isMounted ? "visible" : "hidden"}
+                        variants={containerVariants}
                     >
-                        <h2 className="text-2xl font-bold mb-6">Envoyez-moi un message</h2>
-                        
-                        <form className="space-y-4">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Nom complet</span>
-                                </label>
-                                <input 
-                                    type="text" 
-                                    placeholder="Votre nom" 
-                                    className="input input-bordered w-full" 
-                                    required 
-                                />
+                        <motion.div
+                            className="flex h-full flex-col justify-between rounded-2xl border border-base-300/60 bg-base-100/90 p-6 shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
+                            variants={itemVariants}
+                        >
+                            <div>
+                                <h3 className="text-2xl font-semibold text-base-content">Mes coordonnées</h3>
+                                <p className="mt-2 text-sm text-base-content/70">
+                                    Je réponds rapidement par mail et reste joignable en journée par téléphone.
+                                </p>
                             </div>
-                            
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input 
-                                    type="email" 
-                                    placeholder="Votre email" 
-                                    className="input input-bordered w-full" 
-                                    required 
-                                />
+
+                            <div className="mt-8 space-y-5">
+                                <div className="flex items-start gap-4 rounded-2xl border border-transparent bg-base-100/80 p-4 transition hover:border-sky-200/80">
+                                    <span className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-full border border-sky-200/70 bg-sky-500/10 text-sky-600">
+                                        <Mail className="h-5 w-5" />
+                                    </span>
+                                    <div>
+                                        <h4 className="text-sm font-semibold text-base-content">Email</h4>
+                                        <p className="text-sm text-base-content/75">ibtihel.mnaja@esprit.tn</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4 rounded-2xl border border-transparent bg-base-100/80 p-4 transition hover:border-sky-200/80">
+                                    <span className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-full border border-sky-200/70 bg-sky-500/10 text-sky-600">
+                                        <Phone className="h-5 w-5" />
+                                    </span>
+                                    <div>
+                                        <h4 className="text-sm font-semibold text-base-content">Téléphone</h4>
+                                        <p className="text-sm text-base-content/75">+216 58 296 768</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4 rounded-2xl border border-transparent bg-base-100/80 p-4 transition hover:border-sky-200/80">
+                                    <span className="mt-0.5 flex h-10 w-10 items-center justify-center rounded-full border border-sky-200/70 bg-sky-500/10 text-sky-600">
+                                        <MapPin className="h-5 w-5" />
+                                    </span>
+                                    <div>
+                                        <h4 className="text-sm font-semibold text-base-content">Localisation</h4>
+                                        <p className="text-sm text-base-content/75">Tunis, Tunisie</p>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Message</span>
-                                </label>
-                                <textarea 
-                                    className="textarea textarea-bordered h-32" 
-                                    placeholder="Votre message"
-                                    required
-                                ></textarea>
-                            </div>
-                            
-                            <button type="submit" className="btn btn-accent w-full">
-                                Envoyer le message
-                            </button>
-                        </form>
+                        </motion.div>
+
+                        <motion.div
+                            className="flex h-full flex-col rounded-2xl border border-base-300/60 bg-base-100/90 p-6 shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
+                            variants={itemVariants}
+                        >
+                            <h3 className="text-2xl font-semibold text-base-content">Envoyez-moi un message</h3>
+                            <p className="mt-2 text-sm text-base-content/70">
+                                Utilisez ce formulaire pour partager votre besoin, je vous recontacte dans la journée.
+                            </p>
+
+                            <form className="mt-6 space-y-5">
+                                <div>
+                                    <label className="text-sm font-medium text-base-content/70">Nom complet</label>
+                                    <input
+                                        type="text"
+                                        placeholder="Votre nom"
+                                        className="mt-2 w-full rounded-xl border border-base-300 bg-base-100 px-4 py-3 text-sm transition focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200/80"
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label className="text-sm font-medium text-base-content/70">Email</label>
+                                    <input
+                                        type="email"
+                                        placeholder="Votre email"
+                                        className="mt-2 w-full rounded-xl border border-base-300 bg-base-100 px-4 py-3 text-sm transition focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200/80"
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label className="text-sm font-medium text-base-content/70">Message</label>
+                                    <textarea
+                                        className="mt-2 h-32 w-full rounded-xl border border-base-300 bg-base-100 px-4 py-3 text-sm transition focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200/80"
+                                        placeholder="Votre message"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    className="btn mt-4 w-full rounded-xl border-none bg-sky-500 text-white shadow-md transition hover:bg-sky-600 hover:shadow-xl"
+                                >
+                                    Envoyer le message
+                                </button>
+                            </form>
+                        </motion.div>
                     </motion.div>
-                </motion.div>
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
