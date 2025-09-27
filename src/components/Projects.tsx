@@ -57,11 +57,13 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className="mt-10" id="Projects">
+        <div id="Projects" className="bg-base-300 p-10 mb-10 md:mb-32">
+           <div className="max-w-6xl mx-auto">
             <Title title="Mes Projets" />
+            <br /><br />
             <div className="grid md:grid-cols-3 gap-4">
                 {projects.map((project) => (
-                    <div key={project.id} className="bg-base-300 p-5 rounded-xl shadow-lg flex flex-col h-full">
+                    <div key={project.id} className="bg-base-100 p-5 rounded-2xl shadow-lg flex border border-base-200 flex-col h-full">
                         <div className="flex-shrink-0">
                             <img
                                 src={project.image}
@@ -98,8 +100,11 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
+            </div>
         </div>
     )
 }
 
 export default Projects
+
+

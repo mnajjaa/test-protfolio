@@ -47,7 +47,7 @@ const About = () => {
     };
 
     return (
-        <div className="bg-base-300 p-10 mb-10 md:mb-32" id="About">
+        <div className="bg-base-300 p-10 mb-10" id="About">
             <div className="max-w-6xl mx-auto">
                 <Title title="À propos de moi" />
                 <br />
