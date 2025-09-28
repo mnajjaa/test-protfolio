@@ -61,7 +61,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div id="Projects" className="bg-base-300 p-10 mb-10 md:mb-32">
+        <div id="Projects" className="bg-base-300 p-10  ">
             <div className="max-w-6xl mx-auto">
                 <Title title="Mes Projets" />
                 <br />

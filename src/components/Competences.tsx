@@ -133,10 +133,10 @@ const Competences = () => {
     };
 
     return (
-        <section id="Competences" className="bg-base-300 py-16 md:py-24">
+        <section id="Competences" className="bg-base-100 py-16 py-24">
             <div className="mx-auto max-w-6xl px-4 md:px-6">
-                <Title title="Mes Competences" />
-                <div className="mt-12 rounded-3xl border border-base-300/50 bg-base-100 p-8 shadow-xl backdrop-blur md:px-12">
+                <Title title="Mes Compétences" />
+                <div className="mt-12 rounded-3xl border border-base-300/50 bg-base-300 p-8 shadow-xl backdrop-blur md:px-12">
                     <div className="mx-auto max-w-5xl">
                         <div className="flex flex-col gap-3 pb-10 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
                             <h2 className="text-3xl font-semibold tracking-tight">Panorama technique</h2>
@@ -154,7 +154,7 @@ const Competences = () => {
                             {competenceAreas.map((competence, index) => (
                                 <motion.article
                                     key={competence.category}
-                                    className="relative flex h-full flex-col rounded-2xl border border-base-300/60 bg-base-100/90 p-6 shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
+                                    className="relative flex h-full flex-col rounded-2xl border border-base-100 bg-base-100 p-6 shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
                                     variants={itemVariants}
                                     whileHover={{ y: -8 }}
                                 >
