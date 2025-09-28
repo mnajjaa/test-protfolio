@@ -30,15 +30,12 @@ type Skill = {
 
 type CompetenceArea = {
     category: string;
-    summary: string;
     skills: Skill[];
 };
 
 const competenceAreas: CompetenceArea[] = [
     {
         category: "Langages de programmation",
-        summary:
-            "Stack principal pour prototyper rapidement, industrialiser des pipelines data et livrer des outils front-end fiables.",
         skills: [
             { name: "Python", image: imgPYTHON, level: "Avance", focus: "Scripting, pipelines ML et automatisation." },
             { name: "R", image: imgR, level: "Intermediaire", focus: "Analyses statistiques et modelisation exploratoire." },
@@ -49,8 +46,6 @@ const competenceAreas: CompetenceArea[] = [
     },
     {
         category: "Machine Learning & IA",
-        summary:
-            "Methodes pour concevoir des modeles explicables, orchestrer les experiments et translater les insights en impact business.",
         skills: [
             { name: "Regression / Classification", image: imgPYTHON, level: "Avance", focus: "KPIs predictifs et scoring operationnel." },
             { name: "Clustering", image: imgPYTHON, level: "Avance", focus: "Segmentation client et pattern discovery." },
@@ -61,8 +56,6 @@ const competenceAreas: CompetenceArea[] = [
     },
     {
         category: "Developpement Web & API",
-        summary:
-            "Frameworks utilises pour proposer des experiences full-stack performantes, exposees via des APIs robustes.",
         skills: [
             { name: "Flask", image: imgFLASK, level: "Avance", focus: "APIs data et micro-services rapides a deployer." },
             { name: "FastAPI", image: imgFASTAPI, level: "Intermediaire", focus: "Endpoints asynchrones haute performance." },
@@ -73,8 +66,6 @@ const competenceAreas: CompetenceArea[] = [
     },
     {
         category: "Base de donnees",
-        summary:
-            "Technologies pour structurer, requeter et optimiser la persistence des donnees au service des projets.",
         skills: [
             { name: "MySQL", image: imgSQL, level: "Avance", focus: "Schemas transactionnels et tuning de requetes." },
             { name: "PostgreSQL", image: imgPOSTGRESQL, level: "Avance", focus: "Charges analytiques et fonctions avancees." },
@@ -84,8 +75,6 @@ const competenceAreas: CompetenceArea[] = [
     },
     {
         category: "MLOps & CI/CD",
-        summary:
-            "Solutions adoptees pour packager, deployer et superviser les pipelines ML sur des environnements hybrides.",
         skills: [
             { name: "Docker", image: imgDOCKER, level: "Intermediaire", focus: "Containerisation et reproductibilite des runs." },
             { name: "MLflow", image: imgMLFLOW, level: "Intermediaire", focus: "Traquage d'experiments et model registry." },
@@ -95,8 +84,6 @@ const competenceAreas: CompetenceArea[] = [
     },
     {
         category: "DataViz & BI",
-        summary:
-            "Plateformes utilisees pour transformer des indicateurs complexes en tableaux de bord actionnables.",
         skills: [
             { name: "Power BI", image: imgPOWERBI, level: "Avance", focus: "Reporting executif et suivi temps reel." },
         ],
@@ -167,9 +154,7 @@ const Competences = () => {
                                         </div>
                                     </header>
 
-                                    <p className="mt-4 text-sm leading-relaxed text-base-content/75">
-                                        {competence.summary}
-                                    </p>
+                                    
 
                                     <ul className="mt-6 space-y-2">
                                         {competence.skills.map((skill) => (

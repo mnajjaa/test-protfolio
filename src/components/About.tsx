@@ -1,4 +1,4 @@
-import Title from "./Title";
+﻿import Title from "./Title";
 import img from "../assets/photoLarge1.jpg";
 import { Sparkles, Workflow, Orbit, Radar, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
@@ -49,15 +49,14 @@ const About = () => {
     return (
         <section id="About" className="bg-base-300 py-16">
             <div className="mx-auto max-w-6xl px-4 md:px-6">
-                
+                <Title title="A propos de moi" />
 
                 <motion.div
-                    className="mt-12 flex flex-col items-center gap-10 md:flex-row"
+                    className="mt-10 flex flex-col items-center gap-10 md:flex-row"
                     initial="hidden"
                     animate={isMounted ? "visible" : "hidden"}
                     variants={containerVariants}
                 >
-                    {/* Photo de profil */}
                     <motion.div
                         className="flex h-full w-full items-center justify-center md:w-1/3"
                         variants={imageVariants}
@@ -76,19 +75,17 @@ const About = () => {
                         </div>
                     </motion.div>
 
-                    {/* Contenu texte */}
                     <motion.div className="w-full space-y-6 md:w-2/3" variants={containerVariants}>
-                        {/* Bio */}
                         <motion.div
                             className="rounded-3xl border border-base-200/70 bg-base-100 p-6 shadow-lg"
                             variants={itemVariants}
                         >
-                            <h2 className="text-2xl font-semibold text-base-content">À propos</h2>
+                            <h2 className="text-2xl font-semibold text-base-content">Mon parcours</h2>
                             <p className="mt-4 text-sm leading-relaxed text-base-content/80">
-                                Étudiante ingénieure en Data Science à ESPRIT. J’assemble modèles, pipelines et MLOps pour livrer des produits data utiles.
+                                Etudiante ingenieure en Data Science a ESPRIT. Je combine modeles, pipelines et pratiques MLOps pour livrer des produits data utiles.
                             </p>
-                            <p className="mt-3 text-sm leading-relaxed text-base-content/80">
-                                Ce qui me motive ? Identifier des patterns caches, anticiper des comportements et concevoir des experiences data qui allient rigueur scientifique et impact concret.
+                            <p className="mt-2 text-sm leading-relaxed text-base-content/80">
+                                Ce qui me motive ? decouvrir les bons signaux, anticiper les comportements et concevoir des experiences data a impact durable.
                             </p>
 
                             <div className="mt-5 flex flex-wrap gap-3">
@@ -113,50 +110,56 @@ const About = () => {
                             </div>
                         </motion.div>
 
-                        {/* Points forts / Interets */}
                         <motion.div
-                            className="rounded-3xl border border-base-200/70 bg-base-100 p-8 shadow-lg"
+                            className="rounded-3xl border border-base-200/70 bg-base-100 p-5 shadow-md"
                             variants={itemVariants}
                         >
-                            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                                 <h2 className="text-2xl font-semibold text-base-content">Mes atouts</h2>
                                 <p className="max-w-md text-sm leading-relaxed text-base-content/70">
-Je privilégie un delivery fiable, collaboratif et mesurable.                                </p>
+                                    Je privilegie un delivery fiable, collaboratif et mesurable.
+                                </p>
                             </div>
 
-                            <ul className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
-                                <li className="group flex h-full flex-col rounded-2xl border border-base-200/70 bg-base-100/95 p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-300/80 hover:shadow-lg">
-                                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sky-200/60 bg-sky-500/10 text-sky-600 transition group-hover:bg-sky-500/15">
-                                        <Workflow className="h-5 w-5" />
-                                    </span>
-                                    <h3 className="mt-4 text-base font-semibold text-base-content">Collaboration</h3>
+                            <ul className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-3">
+                                <li className="group flex h-full flex-col rounded-2xl border border-base-200/70 bg-base-100/95 p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-300/80 hover:shadow-lg">
+                                    <div className="flex items-center gap-3">
+                                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-sky-200/60 bg-sky-500/10 text-sky-600 transition group-hover:bg-sky-500/15">
+                                            <Workflow className="h-5 w-5" />
+                                        </span>
+                                        <h3 className="text-base font-semibold text-base-content">Collaboration</h3>
+                                    </div>
                                     <p className="mt-2 text-sm leading-relaxed text-base-content/70">
-Ateliers métier, synthèses claires, feedback rapide. Démos & docs régulières.                                    </p>
+                                        Workshops metier, syntheses claires, feedback rapide. Demos & docs regulières.
+                                    </p>
                                 </li>
-                                <li className="group flex h-full flex-col rounded-2xl border border-base-200/70 bg-base-100/95 p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-300/80 hover:shadow-lg">
-                                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sky-200/60 bg-sky-500/10 text-sky-600 transition group-hover:bg-sky-500/15">
-                                        <Radar className="h-5 w-5" />
-                                    </span>
-                                    <h3 className="mt-4 text-base font-semibold text-base-content">Rigueur analytique</h3>
+                                <li className="group flex h-full flex-col rounded-2xl border border-base-200/70 bg-base-100/95 p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-300/80 hover:shadow-lg">
+                                    <div className="flex items-center gap-3">
+                                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-sky-200/60 bg-sky-500/10 text-sky-600 transition group-hover:bg-sky-500/15">
+                                            <Radar className="h-5 w-5" />
+                                        </span>
+                                        <h3 className="text-base font-semibold text-base-content">Rigueur analytique</h3>
+                                    </div>
                                     <p className="mt-2 text-sm leading-relaxed text-base-content/70">
-                                    Hypothèses → expérimentation → métriques. Décisions tracées et reproductibles.                                    </p>
+Hypothèses → expérimentation → métriques. Décisions tracées et reproductibles.                                    </p>
                                 </li>
-                                <li className="group flex h-full flex-col rounded-2xl border border-base-200/70 bg-base-100/95 p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-300/80 hover:shadow-lg">
-                                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sky-200/60 bg-sky-500/10 text-sky-600 transition group-hover:bg-sky-500/15">
-                                        <Orbit className="h-5 w-5" />
-                                    </span>
-                                    <h3 className="mt-4 text-base font-semibold text-base-content">Ownership</h3>
+                                <li className="group flex h-full flex-col rounded-2xl border border-base-200/70 bg-base-100/95 p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-300/80 hover:shadow-lg">
+                                    <div className="flex items-center gap-3">
+                                        <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-sky-200/60 bg-sky-500/10 text-sky-600 transition group-hover:bg-sky-500/15">
+                                            <Orbit className="h-5 w-5" />
+                                        </span>
+                                        <h3 className="text-base font-semibold text-base-content">Ownership</h3>
+                                    </div>
                                     <p className="mt-2 text-sm leading-relaxed text-base-content/70">
-Autonomie, veille active (ML/MLOps), code propre et testé.                                    </p>
+                                        Autonomie, veille active (ML/MLOps), code propre et teste.
+                                    </p>
                                 </li>
                             </ul>
 
-                            <div className="mt-6 rounded-2xl border border-sky-200/60 bg-sky-500/10 p-5 text-sm font-medium text-base-content/80">
-                                Ouverte à discuter de missions en IA générative ou de plateformes MLOps à mettre en production, dans des contextes réglementés ou scale-up.
+                            <div className="mt-5 rounded-2xl border border-sky-200/60 bg-sky-500/10 p-4 text-sm font-medium text-base-content/80">
+                                Ouverte a discuter de missions en IA generative ou de plateformes MLOps a mettre en production, dans des contextes reglementes ou scale-up.
                             </div>
                         </motion.div>
-
-                        
                     </motion.div>
                 </motion.div>
             </div>

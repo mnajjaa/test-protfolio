@@ -1,4 +1,4 @@
-import { Container } from "lucide-react"
+﻿import { Container } from "lucide-react"
 
 const Navbar = () => {
     return (
@@ -8,35 +8,35 @@ const Navbar = () => {
             >
                 <Container className="mr-2" />
                 DATA
-                <span className="text-accent">SCIENCE</span>
+                <span className="text-sky-500">SCIENCE</span>
             </a>
 
             <ul
                 className="hidden md:flex space-x-4">
                 <li>
                     <a href="#Home"
-                        className="btn btn-sm btn-ghost"
+                        className="btn btn-sm btn-ghost text-base-content hover:bg-sky-500/10 hover:text-sky-600"
                     >
                         Accueil
                     </a>
                 </li>
                 <li>
                     <a href="#About"
-                        className="btn btn-sm btn-ghost"
+                        className="btn btn-sm btn-ghost text-base-content hover:bg-sky-500/10 hover:text-sky-600"
                     >
                         À propos
                     </a>
                 </li>
                 <li>
                     <a href="#Competences"
-                        className="btn btn-sm btn-ghost"
+                        className="btn btn-sm btn-ghost text-base-content hover:bg-sky-500/10 hover:text-sky-600"
                     >
                         Mes compétences
                     </a>
                 </li>
                 <li>
                     <a href="#Experiences"
-                        className="btn btn-sm btn-ghost"
+                        className="btn btn-sm btn-ghost text-base-content hover:bg-sky-500/10 hover:text-sky-600"
                     >
                         Mes expériences
                     </a>
@@ -45,14 +45,14 @@ const Navbar = () => {
 
                 <li>
                     <a href="#Projects"
-                        className="btn btn-sm btn-ghost"
+                        className="btn btn-sm btn-ghost text-base-content hover:bg-sky-500/10 hover:text-sky-600"
                     >
                         Mes projets
                     </a>
                 </li>
                 <li>
     <a href="#Contact"
-        className="btn btn-sm btn-ghost"
+        className="btn btn-sm btn-ghost text-base-content hover:bg-sky-500/10 hover:text-sky-600"
     >
         Contact
     </a>
@@ -65,3 +65,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
