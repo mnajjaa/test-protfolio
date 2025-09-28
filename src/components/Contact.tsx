@@ -1,134 +1,55 @@
-import Title from "./Title";
+﻿import Title from "./Title";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 const Contact = () => {
-    const [isMounted, setIsMounted] = useState(false);
+    
 
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
+    
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2,
-                delayChildren: 0.3
-            }
-        }
-    };
-
-    const itemVariants = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.6
-            }
-        }
-    };
+    
 
     return (
-        <div id="Contact" className="bg-base-300 p-10 mb-10 md:mb-32">
-            <div className="max-w-6xl mx-auto">
-                <Title title="Contactez-moi" />
-                <br />
+        <section id="Contact" className="bg-base-100 py-14 md:py-20 px-6">
+            <div className="mx-auto max-w-4xl px-4 md:px-6">
+                <Title title="Restons en contact" />
+
                 
-                <motion.div 
-                    className="flex flex-col md:flex-row gap-8"
-                    initial="hidden"
-                    animate={isMounted ? "visible" : "hidden"}
-                    variants={containerVariants}
-                >
-                    {/* Informations de contact */}
-                    <motion.div 
-                        className="w-full md:w-1/2 bg-base-100 p-6 rounded-xl shadow-lg"
-                        variants={itemVariants}
-                    >
-                        <h2 className="text-2xl font-bold mb-6">Mes coordonnées</h2>
-                        
-                        <div className="space-y-4">
-                            <div className="flex items-start gap-4">
-                                <Mail className="text-accent mt-1 flex-shrink-0" />
+                    
+                       
+
+                        <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                            <div className="flex min-w-[14rem] flex-1 items-center gap-4 rounded-2xl border border-transparent bg-base-100/80 p-4 transition hover:border-sky-200/80">
+                                <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200/70 bg-sky-500/10 text-sky-600">
+                                    <Mail className="h-5 w-5" />
+                                </span>
                                 <div>
-                                    <h3 className="font-semibold">Email</h3>
-                                    <p className="text-base-content/80">nourhen.ferjeni26@gmail.com</p>
+                                    <h4 className="text-sm font-semibold text-base-content">Email</h4>
+                                    <p className="text-sm text-base-content/75">ibtihel.mnaja@esprit.tn</p>
                                 </div>
                             </div>
-                            
-                            <div className="flex items-start gap-4">
-                                <Phone className="text-accent mt-1 flex-shrink-0" />
+
+                            <div className="flex min-w-[14rem] flex-1 items-center gap-4 rounded-2xl border border-transparent bg-base-100/80 p-4 transition hover:border-sky-200/80">
+                                <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200/70 bg-sky-500/10 text-sky-600">
+                                    <Phone className="h-5 w-5" />
+                                </span>
                                 <div>
-                                    <h3 className="font-semibold">Téléphone</h3>
-                                    <p className="text-base-content/80">+216 92 404 237</p>
+                                    <h4 className="text-sm font-semibold text-base-content">Téléphone</h4>
+                                    <p className="text-sm text-base-content/75">+216 58 296 768</p>
                                 </div>
                             </div>
-                            
-                            <div className="flex items-start gap-4">
-                                <MapPin className="text-accent mt-1 flex-shrink-0" />
+
+                            <div className="flex min-w-[14rem] flex-1 items-center gap-4 rounded-2xl border border-transparent bg-base-100/80 p-4 transition hover:border-sky-200/80">
+                                <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full border border-sky-200/70 bg-sky-500/10 text-sky-600">
+                                    <MapPin className="h-5 w-5" />
+                                </span>
                                 <div>
-                                    <h3 className="font-semibold">Localisation</h3>
-                                    <p className="text-base-content/80">Tunis, Tunisie</p>
+                                    <h4 className="text-sm font-semibold text-base-content">Localisation</h4>
+                                    <p className="text-sm text-base-content/75">Tunis, Tunisie</p>
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
-
-                    {/* Formulaire de contact */}
-                    <motion.div 
-                        className="w-full md:w-1/2 bg-base-100 p-6 rounded-xl shadow-lg"
-                        variants={itemVariants}
-                    >
-                        <h2 className="text-2xl font-bold mb-6">Envoyez-moi un message</h2>
-                        
-                        <form className="space-y-4">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Nom complet</span>
-                                </label>
-                                <input 
-                                    type="text" 
-                                    placeholder="Votre nom" 
-                                    className="input input-bordered w-full" 
-                                    required 
-                                />
-                            </div>
-                            
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input 
-                                    type="email" 
-                                    placeholder="Votre email" 
-                                    className="input input-bordered w-full" 
-                                    required 
-                                />
-                            </div>
-                            
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Message</span>
-                                </label>
-                                <textarea 
-                                    className="textarea textarea-bordered h-32" 
-                                    placeholder="Votre message"
-                                    required
-                                ></textarea>
-                            </div>
-                            
-                            <button type="submit" className="btn btn-accent w-full">
-                                Envoyer le message
-                            </button>
-                        </form>
-                    </motion.div>
-                </motion.div>
             </div>
-        </div>
+        </section>
     );
 };
 

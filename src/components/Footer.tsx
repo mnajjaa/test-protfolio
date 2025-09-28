@@ -1,4 +1,4 @@
-import { Container } from "lucide-react"
+﻿import { Container } from "lucide-react"
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
                 <Container className="w-10 h-10" />
                 <p className="font-bold">
                     DATA
-                    <span className="text-accent">SCIENCE</span>
+                    <span className="text-sky-500">SCIENCE</span>
                 </p>
                 <p>Copyright © {new Date().getFullYear()} -  Tous droits réservés</p>
             </aside>
@@ -18,3 +18,4 @@ const Footer = () => {
 }
 
 export default Footer
+

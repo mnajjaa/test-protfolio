@@ -17,14 +17,11 @@ export default function App() {
 
       <About />
       <Experiences />
+
+      <Projects />
+
       <Competences />
-      
-      <div className="p-5 md:px-[15%]">
-        
-        <Projects />
-        
-      </div>
-       <Contact />
+      <Contact />
       <Footer />
     </div>
   )
