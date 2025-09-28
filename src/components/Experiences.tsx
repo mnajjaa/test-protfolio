@@ -5,7 +5,6 @@ import Title from "./Title";
 import darydar from "../assets/companies/darydar.png";
 import medianet from "../assets/companies/medianet.png";
 import value from "../assets/companies/value.png";
-import { m } from "framer-motion";
 
 const experiences = [
     {

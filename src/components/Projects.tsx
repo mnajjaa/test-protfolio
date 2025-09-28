@@ -1,7 +1,6 @@
 import Title from "./Title";
 import flexflow from "../assets/projects/flexflow.png";
 import B2B from "../assets/projects/B2B.png";
-import BI from "../assets/projects/BI.png";
 import overview from "../assets/projects/overview.png";
 import bank from "../assets/projects/bankscope.png";
 import churn from "../assets/projects/churn.png";

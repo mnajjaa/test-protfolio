@@ -1,36 +1,12 @@
 ﻿import Title from "./Title";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 const Contact = () => {
-    const [isMounted, setIsMounted] = useState(false);
+    
 
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
+    
 
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2,
-                delayChildren: 0.2,
-            },
-        },
-    };
-
-    const itemVariants = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.6,
-            },
-        },
-    };
+    
 
     return (
         <section id="Contact" className="bg-base-100 py-14 md:py-20 px-6">
