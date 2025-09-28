@@ -1,61 +1,73 @@
 import Title from "./Title";
-import img1 from "../assets/projects/1.png";
-import img2 from "../assets/projects/2.png";
-import img3 from "../assets/projects/3.avif";
-import img4 from "../assets/projects/5.png";
-import img5 from "../assets/projects/img5.png";
+import flexflow from "../assets/projects/flexflow.png";
+import B2B from "../assets/projects/B2B.png";
+import BI from "../assets/projects/BI.png";
+import overview from "../assets/projects/overview.png";
+import bank from "../assets/projects/bankscope.png";
+import churn from "../assets/projects/churn.png";
 import { Github, Video } from "lucide-react";
 
 const projects = [
+    
     {
         id: 1,
-        title: "MarketMind - Analyse et Generation de Contenu Marketing par l'IA",
-        description:
-            "Solution IA permettant aux entreprises d'exploiter une plateforme multi-LLM pour analyser les tendances sur les reseaux sociaux et generer du contenu marketing personnalise (texte, image, audio, video).",
-        technologies: ["Python", "LLM", "NLP", "Deep Learning", "Flask"],
-        demoLink: "#",
-        repoLink: "https://github.com/Nourhen-Ferjeni/MarketMind",
-        image: img1,
-    },
-    {
-        id: 2,
-        title: "Churn Prediction & MLOps Pipeline - Telecommunications",
+        title: "BankScope - Banking Agent Simulation Platform",
         description:
             "Projet de data science visant a predire le churn des clients dans le secteur des telecommunications. Integre un pipeline MLOps pour l'automatisation du processus de preparation des donnees, d'entrainement, de deploiement et de surveillance du modele.",
         technologies: ["Python", "scikit-learn", "Pandas", "MLflow", "Docker", "FastAPI"],
         demoLink: "#",
-        repoLink: "https://github.com/Nourhen-Ferjeni/MLOPS_Customer_Churn_Prediction",
-        image: img2,
+        repoLink: "https://github.com/mnajjaa/banking-agent-simulation-platform",
+        image: bank,
+    },
+     {
+        id: 2,
+        title: "DueDeals - Crypto Funds Due Diligence & Market Analysis",
+        description:
+            "Solution IA permettant aux entreprises d'exploiter une plateforme multi-LLM pour analyser les tendances sur les reseaux sociaux et generer du contenu marketing personnalise (texte, image, audio, video).",
+        technologies: ["Python", "LLM", "NLP", "RAG", "Django", "Celery"],
+        demoLink: "#",
+        repoLink: "https://github.com/mnajjaa/Crypto-Fund-Due-Diligence-Automation",
+        image: overview,
     },
     {
         id: 3,
-        title: "Analyse des vols Avian - Power BI",
+        title: "Churn Prediction & MLOps Pipeline – Télécommunications",
         description:
-            "Dashboard analytique pour l'optimisation des routes aeriennes, analyse des retards et performance operationnelle.",
-        technologies: ["Power BI", "SQL", "Data Modeling", "DAX"],
+            "Projet de data science visant a predire le churn des clients dans le secteur des telecommunications. Integre un pipeline MLOps pour l'automatisation du processus de preparation des donnees, d'entrainement, de deploiement et de surveillance du modele.",
+        technologies: ["Python", "scikit-learn", "Pandas", "Docker", "MLflow","Jenkins", "FastAPI", "Power BI","PostgreSQL", "Elasticsearch", "Kibana"],
         demoLink: "#",
-        repoLink: "https://github.com/Nourhen-Ferjeni/Airline-Loyalty-Program",
-        image: img3,
+        repoLink: "https://github.com/mnajjaa/telecom-churn-prediction-mlops-pipeline",
+        image: churn,
     },
-    {
-        id: 4,
-        title: "ARTvue - Plateforme Multiplateforme pour l'Exposition d'Art",
-        description:
-            "Plateforme interactive accessible sur web, mobile et desktop permettant aux artistes d'exposer, gerer et promouvoir leurs oeuvres en ligne.",
-        technologies: ["Symfony", "JavaFX", "Flutter", "MySQL"],
-        demoLink: "#",
-        repoLink: "https://github.com/Nourhen-Ferjeni/Art_Vue_Symfony",
-        image: img4,
-    },
+    // {
+    //     id: 4,
+    //     title: "Analyse des vols Avian - Power BI",
+    //     description:
+    //         "Dashboard analytique pour l'optimisation des routes aeriennes, analyse des retards et performance operationnelle.",
+    //     technologies: ["Power BI", "SQL", "Data Modeling", "DAX"],
+    //     demoLink: "#",
+    //     repoLink: "https://app.powerbi.com/groups/db99f688-aca7-4a0e-b15f-c1aeea23e873/reports/170c55ba-7e00-4092-9f94-202b9705caec?ctid=604f1a96-cbe8-43f8-abbf-f8eaf5d85730&pbi_source=linkShare",
+    //     image: BI,
+    // },
     {
         id: 5,
-        title: "Application mobile pour ecole primaire",
+        title: "FlexFlow – Plateforme multisupport de sport et bien-être",
         description:
-            "Application mobile pour une ecole primaire avec acces aux notes, emploi du temps, examens et integration d'un systeme de suivi des bus scolaires.",
-        technologies: ["Flutter", "Spring Boot", "Firebase"],
+            "FlexFlow est une plateforme sportive tout-en-un qui centralise coaching, événements et e-commerce avec automatisation intelligente.",
+        technologies: ["Symfony", "JavaFX", "Flutter", "MySQL"],
         demoLink: "#",
-        repoLink: "https://github.com/Nourhen-Ferjeni/eParentFront",
-        image: img5,
+        repoLink: "https://github.com/mnajjaa/FlexFlowWeb",
+        image: flexflow,
+    },
+    {
+        id: 6,
+        title: "Plateforme B2B de gestion des interventions d’assurance ",
+        description:
+            "Application web B2B permettant aux compagnies d’assurance de gérer efficacement leurs interventions",
+        technologies: ["Laravel", "Vue.js", "Figma"],
+        demoLink: "#",
+        repoLink: "https://github.com/mnajjaa/B2B_project_Backend",
+        image: B2B,
     },
 ];
 
