@@ -49,10 +49,9 @@ const About = () => {
     return (
         <section id="About" className="bg-base-300 py-16">
             <div className="mx-auto max-w-6xl px-4 md:px-6">
-                <Title title="A propos de moi" />
 
                 <motion.div
-                    className="mt-10 flex flex-col items-center gap-10 md:flex-row"
+                    className=" flex flex-col items-center gap-10 md:flex-row"
                     initial="hidden"
                     animate={isMounted ? "visible" : "hidden"}
                     variants={containerVariants}
@@ -141,7 +140,7 @@ const About = () => {
                                         <h3 className="text-base font-semibold text-base-content">Rigueur analytique</h3>
                                     </div>
                                     <p className="mt-2 text-sm leading-relaxed text-base-content/70">
-Hypothèses → expérimentation → métriques. Décisions tracées et reproductibles.                                    </p>
+Décisions tracées et reproductibles.                                    </p>
                                 </li>
                                 <li className="group flex h-full flex-col rounded-2xl border border-base-200/70 bg-base-100/95 p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-300/80 hover:shadow-lg">
                                     <div className="flex items-center gap-3">

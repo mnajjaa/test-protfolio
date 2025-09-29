@@ -76,7 +76,6 @@ const Projects = () => {
             <div className="max-w-6xl mx-auto">
                 <Title title="Mes Projets" />
                 <br />
-                <br />
                 <div className="grid gap-8 md:grid-cols-3">
                     {projects.map((project, index) => (
                         <article

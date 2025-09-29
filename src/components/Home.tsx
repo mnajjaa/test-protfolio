@@ -11,15 +11,15 @@ const Home = () => {
 
     return (
         <div id="Home" className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10">
-            <div className="flex flex-col">
+            <div className="flex flex-col md:w-[48rem] lg:w-[54rem]">
                 <h1 className="text-5xl md:text-6xl font-bold text-center md:text-left mt-4 md:mt-0">
                     Bonjour, je suis {" "} <br />
                     <span className="text-sky-500 text-5xl md:text-5xl"> Ibtihel Mnaja</span>
                 </h1>
 
                 <p className="my-4 text-md text-center md:text-left">
-                    Étudiante ingénieure en Data Science, passionnée par l’analyse de données et le ML appliqué, je développe des modèles, des pipelines et des API au service des KPI. <br />
-                    En recherche d’un stage de fin d’études à partir de janvier 2026.
+                    Étudiante ingénieure en Data Science, passionnée par l’analyse de données et le ML appliqué, je développe des modèles, des pipelines et des API au service des KPI.
+                    <br></br> <span className="block md:inline md:whitespace-nowrap"> En recherche d’un stage de fin d’études à partir de janvier 2026.</span>
                 </p>
 
                 <div className="flex flex-col md:flex-row gap-4">
@@ -37,11 +37,11 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="md:ml-60">
+            <div className="md:ml-16 lg:ml-24">
   <div
     className="
       relative overflow-hidden
-      aspect-square w-96 md:w-[28rem]
+      aspect-square w-72 md:w-[20rem]
       border-8 border-sky-400/60
       shadow-xl
       [border-radius:30%_70%_70%_30%_/_67%_62%_38%_33%]
