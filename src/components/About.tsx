@@ -1,5 +1,4 @@
-﻿import Title from "./Title";
-import img from "../assets/photoLarge1.jpg";
+﻿import img from "../assets/photoLarge1.jpg";
 import { Sparkles, Workflow, Orbit, Radar, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
