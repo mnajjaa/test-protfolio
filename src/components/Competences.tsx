@@ -25,7 +25,7 @@ import django from "../assets/techno/django.png";
 
 type Skill = {
     name: string;
-    image: string;
+    image?: string;
     level: "Avance" | "Intermediaire" | "Debutant";
     focus: string;
 };
@@ -66,7 +66,7 @@ const competenceAreas: CompetenceArea[] = [
     {
         category: "Développement Web & API",
         skills: [
-            { name: "Flask", image: imgFLASK, level: "Avance", focus: "" },
+            // { name: "Flask", image: imgFLASK, level: "Avance", focus: "" },
             { name: "FastAPI", image: imgFASTAPI, level: "Intermediaire", focus: "" },
             { name: "Django", image: django, level: "Intermediaire", focus: "" },
             { name: "Spring Boot", image: imgSPRING, level: "Intermediaire", focus: "" },
@@ -83,16 +83,26 @@ const competenceAreas: CompetenceArea[] = [
             { name: "PostgreSQL", image: imgPOSTGRESQL, level: "Intermediaire", focus: "" },
             { name: "MySQL", image: imgSQL, level: "Intermediaire", focus: "" },
             { name: "MongoDB", image: imgMONGODB, level: "Intermediaire", focus: "" },
-            { name: "Neo4j", image: neo, level: "Intermediaire", focus: "" },
+            // { name: "Neo4j", image: neo, level: "Intermediaire", focus: "" },
 
 
         ],
     },
     
+];
+
+const supplementalAreas: CompetenceArea[] = [
     {
         category: "DataViz & BI",
         skills: [
-            { name: "Power BI", image: imgPOWERBI, level: "Avance", focus: "Reporting executif et suivi temps reel." },
+            { name: "Power BI", image: imgPOWERBI, level: "Avance", focus: "" },
+        ],
+    },
+    {
+        category: "Methodologies",
+        skills: [
+            { name: "CRISP-DM, TDSP, Agile", level: "Avance", focus: "" },
+
         ],
     },
 ];
@@ -143,30 +153,33 @@ const Competences = () => {
                             {competenceAreas.map((competence) => (
                                 <motion.article
                                     key={competence.category}
-                                    className="relative flex h-full flex-col rounded-2xl border border-base-100 bg-base-100 p-6 shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
+                                    className="relative flex flex-col rounded-2xl border border-base-100 bg-base-100 p-6 shadow-md transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
                                     variants={itemVariants}
                                     whileHover={{ y: -8 }}
                                 >
                                     <header className="flex items-start justify-between gap-4">
                                         <div>
-                                            
                                             <h3 className="mt-3 text-lg font-semibold text-base-content">
                                                 {competence.category}
                                             </h3>
                                         </div>
                                     </header>
 
-                                    
-
                                     <ul className="mt-6 space-y-2">
                                         {competence.skills.map((skill) => (
                                             <li key={skill.name} className="flex items-start gap-3">
                                                 <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full border border-base-200 bg-base-100/80">
-                                                    <img
-                                                        src={skill.image}
-                                                        alt={skill.name}
-                                                        className="h-6 w-6 object-contain"
-                                                    />
+                                                    {skill.image ? (
+                                                        <img
+                                                            src={skill.image}
+                                                            alt={skill.name}
+                                                            className="h-6 w-6 object-contain"
+                                                        />
+                                                    ) : (
+                                                        <span className="text-xs font-semibold uppercase text-base-content/80">
+                                                            {skill.name.slice(0, 2)}
+                                                        </span>
+                                                    )}
                                                 </span>
                                                 <div>
                                                     <p className="font-medium text-sm text-base-content">{skill.name}</p>
@@ -177,6 +190,50 @@ const Competences = () => {
                                     </ul>
                                 </motion.article>
                             ))}
+
+                            <motion.div
+                                className="flex flex-col gap-6"
+                                variants={itemVariants}
+                            >
+                                {supplementalAreas.map((competence) => (
+                                    <div
+                                        key={competence.category}
+                                        className="relative flex flex-col rounded-2xl border border-base-100 bg-base-100 p-6 shadow-md transition-all duration-200 transform hover:-translate-y-1 hover:shadow-xl"
+                                    >
+                                        <header className="flex items-start justify-between gap-4">
+                                            <div>
+                                                <h3 className="mt-3 text-lg font-semibold text-base-content">
+                                                    {competence.category}
+                                                </h3>
+                                            </div>
+                                        </header>
+
+                                        <ul className="mt-6 space-y-2">
+                                            {competence.skills.map((skill) => (
+                                                <li key={skill.name} className="flex items-start gap-3">
+                                                    <span className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full border border-base-200 bg-base-100/80">
+                                                        {skill.image ? (
+                                                            <img
+                                                                src={skill.image}
+                                                                alt={skill.name}
+                                                                className="h-6 w-6 object-contain"
+                                                            />
+                                                        ) : (
+                                                            <span className="text-xs font-semibold uppercase text-base-content/80">
+                                                                {skill.name.slice(0, 2)}
+                                                            </span>
+                                                        )}
+                                                    </span>
+                                                    <div>
+                                                        <p className="font-medium text-sm text-base-content">{skill.name}</p>
+                                                        <p className="mt-1 text-xs leading-relaxed text-base-content/70">{skill.focus}</p>
+                                                    </div>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </motion.div>
                         </motion.div>
                     </div>
                 </div>
