@@ -12,8 +12,8 @@ const projects = [
         id: 1,
         title: "BankScope - Banking Agent Simulation Platform",
         description:
-            "Projet de data science visant a predire le churn des clients dans le secteur des telecommunications. Integre un pipeline MLOps pour l'automatisation du processus de preparation des donnees, d'entrainement, de deploiement et de surveillance du modele.",
-        technologies: ["Python", "scikit-learn", "Pandas", "MLflow", "Docker", "FastAPI"],
+            "Un simulateur IA multi-agents pour modéliser le comportement des entreprises clientes des banques tunisiennes, intégrant agents dynamiques, scraping intelligent avec LLM et LangChain, ainsi que des méthodes avancées pour prédire adoption, churn et impact des scénarios économiques/marketing.",
+        technologies: ["FastAPI", "Pandas", "NumPy", "Mesa", "React", "LangChain"],
         demoLink: "#",
         repoLink: "https://github.com/mnajjaa/banking-agent-simulation-platform",
         image: bank,
@@ -22,8 +22,8 @@ const projects = [
         id: 2,
         title: "DueDeals - Crypto Funds Due Diligence & Market Analysis",
         description:
-            "Solution IA permettant aux entreprises d'exploiter une plateforme multi-LLM pour analyser les tendances sur les reseaux sociaux et generer du contenu marketing personnalise (texte, image, audio, video).",
-        technologies: ["Python", "LLM", "NLP", "RAG", "Django", "Celery"],
+            "Plateforme permet l’évaluation de projets blockchain grâce à des pipelines de données distribués, un système Q&A et un chatbot intelligent basés sur le Prompt Engineering et le RAG. La solution inclut un moteur de scoring, des dashboards interactifs et la génération automatisée de rapports détaillés.",
+        technologies: ["Pandas", "GenAI", "Prompt Engineering", "RAG", "Django", "Celery"],
         demoLink: "#",
         repoLink: "https://github.com/mnajjaa/Crypto-Fund-Due-Diligence-Automation",
         image: overview,
@@ -32,7 +32,7 @@ const projects = [
         id: 3,
         title: "Churn Prediction & MLOps Pipeline – Télécommunications",
         description:
-            "Projet de data science visant a predire le churn des clients dans le secteur des telecommunications. Integre un pipeline MLOps pour l'automatisation du processus de preparation des donnees, d'entrainement, de deploiement et de surveillance du modele.",
+            "Projet de data science pour prédire le churn client dans les télécommunications. Il intègre un pipeline MLOps de bout en bout (préparation des données, entraînement, déploiement, suivi du modèle) et un tableau de bord Power BI présentant les KPI.",
         technologies: ["Python", "scikit-learn", "Pandas", "Docker", "MLflow","Jenkins", "FastAPI", "Power BI","PostgreSQL", "Elasticsearch", "Kibana"],
         demoLink: "#",
         repoLink: "https://github.com/mnajjaa/telecom-churn-prediction-mlops-pipeline",
@@ -75,7 +75,6 @@ const Projects = () => {
         <div id="Projects" className="bg-base-300 p-10  ">
             <div className="max-w-6xl mx-auto">
                 <Title title="Mes Projets" />
-                <br />
                 <br />
                 <div className="grid gap-8 md:grid-cols-3">
                     {projects.map((project, index) => (
