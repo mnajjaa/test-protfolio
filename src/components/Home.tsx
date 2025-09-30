@@ -18,7 +18,7 @@ const Home = () => {
                 </h1>
 
                 <p className="my-4 text-md text-center md:text-left">
-                    Étudiante ingénieure en Data Science, passionnée par l’analyse de données et le ML appliqué, je développe des modèles, des pipelines et des API au service des KPI.
+                    Étudiante ingénieure en Data Science, passionnée par l’analyse de données et le ML appliqué, je développe des modèles, des pipelines et des APIs au service des KPIs.
                     <br></br> <span className="block md:inline md:whitespace-nowrap"> En recherche d’un stage de fin d’études à partir de janvier 2026.</span>
                 </p>
 

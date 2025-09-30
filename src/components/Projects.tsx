@@ -14,7 +14,7 @@ const projects = [
         description:
             "Un simulateur IA multi-agents pour modéliser le comportement des entreprises clientes des banques tunisiennes, intégrant agents dynamiques, scraping intelligent avec LLM et LangChain, ainsi que des méthodes avancées pour prédire adoption, churn et impact des scénarios économiques/marketing.",
         technologies: ["FastAPI", "Pandas", "NumPy", "Mesa", "React", "LangChain"],
-        demoLink: "#",
+        demoLink: "https://drive.google.com/drive/folders/125Nff3rt1Dp2jbf4VmVG1J6y7wE24VQT?usp=sharing",
         repoLink: "https://github.com/mnajjaa/banking-agent-simulation-platform",
         image: bank,
     },
@@ -24,7 +24,7 @@ const projects = [
         description:
             "Plateforme permet l’évaluation de projets blockchain grâce à des pipelines de données distribués, un système Q&A et un chatbot intelligent basés sur le Prompt Engineering et le RAG. La solution inclut un moteur de scoring, des dashboards interactifs et la génération automatisée de rapports détaillés.",
         technologies: ["Pandas", "GenAI", "Prompt Engineering", "RAG", "Django", "Celery"],
-        demoLink: "#",
+        demoLink: "https://drive.google.com/file/d/12N8SGLve9UlVt0T6MVaRA1C-KyF_N8uE/view?usp=sharing",
         repoLink: "https://github.com/mnajjaa/Crypto-Fund-Due-Diligence-Automation",
         image: overview,
     },
@@ -32,9 +32,9 @@ const projects = [
         id: 3,
         title: "Churn Prediction & MLOps Pipeline – Télécommunications",
         description:
-            "Projet de data science pour prédire le churn client dans les télécommunications. Il intègre un pipeline MLOps de bout en bout (préparation des données, entraînement, déploiement, suivi du modèle) et un tableau de bord Power BI présentant les KPI.",
+            "Projet de data science pour prédire le churn client dans les télécommunications. Il intègre un pipeline MLOps de bout en bout (préparation des données, entraînement, déploiement, suivi du modèle) et un tableau de bord Power BI présentant les KPIs.",
         technologies: ["Python", "scikit-learn", "Pandas", "Docker", "MLflow","Jenkins", "FastAPI", "Power BI","PostgreSQL", "Elasticsearch", "Kibana"],
-        demoLink: "#",
+        demoLink: "https://docs.google.com/presentation/d/1rJmoei5EYujSVwojuCGckRpvGXu6ttWd/edit?usp=sharing&ouid=106016130967779286081&rtpof=true&sd=true",
         repoLink: "https://github.com/mnajjaa/telecom-churn-prediction-mlops-pipeline",
         image: churn,
     },
@@ -50,9 +50,9 @@ const projects = [
     // },
     {
         id: 5,
-        title: "FlexFlow – Plateforme multisupport de sport et bien-être",
+        title: "FlexFlow – Plateforme multisupport de sport",
         description:
-            "FlexFlow est une plateforme sportive tout-en-un qui centralise coaching, événements et e-commerce avec automatisation intelligente.",
+            "FlexFlow est une plateforme sportive tout-en-un qui centralise coaching, événements et e-commerce.",
         technologies: ["Symfony", "JavaFX", "Flutter", "MySQL"],
         demoLink: "#",
         repoLink: "https://github.com/mnajjaa/FlexFlowWeb",

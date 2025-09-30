@@ -36,7 +36,7 @@ const experiences = [
     },
     {
         id: 3,
-        role: "Stagiaire en DAcveloppement Full-Stack chez",
+        role: "Stagiaire en Développement Full-Stack chez",
         company: "Medianet",
         website: "https://www.medianet.tn/fr",
         period: "Juillet 2024 - Août 2024",

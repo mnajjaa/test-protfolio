@@ -20,6 +20,8 @@ import imgSYMFONY from "../assets/techno/symfony.png";
 import imgMLFLOW from "../assets/techno/mlflow.png";
 import imgJENKINS from "../assets/techno/jenkins.png";
 import django from "../assets/techno/django.png";
+import Net from "../assets/techno/Net.png";
+import neo from "../assets/techno/neo.png";
 
 type Skill = {
     name: string;
@@ -38,9 +40,9 @@ const competenceAreas: CompetenceArea[] = [
         category: "Langages de programmation",
         skills: [
             { name: "Python", image: imgPYTHON, level: "Avance", focus: "Scripting, pipelines ML et automatisation." },
-            { name: "R", image: imgR, level: "Intermediaire", focus: "Analyses statistiques et modelisation exploratoire." },
+            { name: "R", image: imgR, level: "Intermediaire", focus: "Analyses statistiques et modélisation exploratoire." },
             { name: "Java", image: imgJAVA, level: "Intermediaire", focus: "Services backend et outils enterprise." },
-            { name: "SQL", image: imgSQL, level: "Avance", focus: "Modelisation relationnelle et optimisation de requetes." },
+            { name: "SQL", image: imgSQL, level: "Avance", focus: "Modélisation relationnelle et optimisation de requêtes." },
         ],
     },
     {
@@ -55,7 +57,7 @@ const competenceAreas: CompetenceArea[] = [
     {
         category: "MLOps & CI/CD",
         skills: [
-            { name: "Docker", image: imgDOCKER, level: "Intermediaire", focus: "Containerisation et reproductibilite des runs." },
+            { name: "Docker", image: imgDOCKER, level: "Intermediaire", focus: "Containerisation et reproductibilité des runs." },
             { name: "MLflow", image: imgMLFLOW, level: "Intermediaire", focus: "Traquage d'experiments et model registry." },
             { name: "Jenkins", image: imgJENKINS, level: "Intermediaire", focus: "Automatisation CI/CD pour projets data." },
             { name: "Makefile", image: imgPYTHON, level: "Intermediaire", focus: "Orchestration simple de builds et scripts." },
@@ -69,7 +71,9 @@ const competenceAreas: CompetenceArea[] = [
             { name: "Django", image: django, level: "Intermediaire", focus: "" },
             { name: "Spring Boot", image: imgSPRING, level: "Intermediaire", focus: "" },
             { name: "Symfony", image: imgSYMFONY, level: "Intermediaire", focus: "" },
+            { name: ".Net", image: Net, level: "Intermediaire", focus: "" },
             { name: "React, Angular", image: imgJS, level: "Intermediaire", focus: "" },
+
 
         ],
     },
@@ -81,7 +85,7 @@ const competenceAreas: CompetenceArea[] = [
             { name: "PostgreSQL", image: imgPOSTGRESQL, level: "Intermediaire", focus: "" },
             { name: "MySQL", image: imgSQL, level: "Intermediaire", focus: "" },
             { name: "MongoDB", image: imgMONGODB, level: "Intermediaire", focus: "" },
-            // { name: "Neo4j", image: neo, level: "Intermediaire", focus: "" },
+            { name: "Neo4j", image: neo, level: "Intermediaire", focus: "" },
 
 
         ],
@@ -99,7 +103,9 @@ const supplementalAreas: CompetenceArea[] = [
     {
         category: "Methodologies",
         skills: [
-            { name: "CRISP-DM, TDSP, Agile", level: "Avance", focus: "" },
+            { name: "CRISP-DM, Agile", level: "Avance", focus: "" },
+            { name: "TDSP", level: "Avance", focus: "" },
+
 
         ],
     },

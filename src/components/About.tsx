@@ -80,10 +80,10 @@ const About = () => {
                         >
                             <h2 className="text-2xl font-semibold text-base-content">Mon parcours</h2>
                             <p className="mt-4 text-sm leading-relaxed text-base-content/80">
-                                Etudiante ingenieure en Data Science a ESPRIT. Je combine modeles, pipelines et pratiques MLOps pour livrer des produits data utiles.
+                                Étudiante ingenieure en Data Science à ESPRIT. Je combine modèles, pipelines et pratiques MLOps pour livrer des produits data utiles.
                             </p>
                             <p className="mt-2 text-sm leading-relaxed text-base-content/80">
-                                Ce qui me motive ? decouvrir les bons signaux, anticiper les comportements et concevoir des experiences data a impact durable.
+                                Ce qui me motive ? Découvrir les bons signaux, anticiper les comportements et concevoir des expériences data à impact durable.
                             </p>
 
                             <div className="mt-5 flex flex-wrap gap-3">
@@ -115,7 +115,7 @@ const About = () => {
                             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                                 <h2 className="text-2xl font-semibold text-base-content">Mes atouts</h2>
                                 <p className="max-w-md text-sm leading-relaxed text-base-content/70">
-                                    Je privilegie un delivery fiable, collaboratif et mesurable.
+                                    Je privilégie un delivery fiable, collaboratif et mesurable.
                                 </p>
                             </div>
 
@@ -128,7 +128,7 @@ const About = () => {
                                         <h3 className="text-base font-semibold text-base-content">Collaboration</h3>
                                     </div>
                                     <p className="mt-2 text-sm leading-relaxed text-base-content/70">
-                                        Workshops metier, syntheses claires, feedback rapide. Demos & docs regulières.
+                                        Workshops métier, synthèses claires, feedback rapide. Démos & docs régulières.
                                     </p>
                                 </li>
                                 <li className="group flex h-full flex-col rounded-2xl border border-base-200/70 bg-base-100/95 p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-sky-300/80 hover:shadow-lg">
@@ -155,7 +155,7 @@ Décisions tracées et reproductibles.                                    </p>
                             </ul>
 
                             <div className="mt-5 rounded-2xl border border-sky-200/60 bg-sky-500/10 p-4 text-sm font-medium text-base-content/80">
-                                Ouverte a discuter de missions en IA generative ou de plateformes MLOps a mettre en production, dans des contextes reglementes ou scale-up.
+                                Ouverte à discuter de missions en IA générative ou de plateformes MLOps a mettre en production, dans des contextes réglementés ou de scale-up.
                             </div>
                         </motion.div>
                     </motion.div>
